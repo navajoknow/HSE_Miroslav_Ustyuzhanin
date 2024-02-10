@@ -60,4 +60,4 @@ print("***")
 """
 print("Введите число от 1 до 9:")
 n = input()
-print(n+(str(n)+str(n))+(str(n)+str(n)+str(n)))
+print(int(n)+int(n*2)+int(n*3))
