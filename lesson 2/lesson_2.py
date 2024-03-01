@@ -14,7 +14,6 @@ from lesson_2_data import courts, respondents
 Принимает в качестве аргумента размер двух катетов треугольника. Возвращает площадь треугольника.
 """
 
-
 def func_1_factorial(number: int) -> int | float:
     start = 1
     result = 1
@@ -80,7 +79,6 @@ def task_1():
 
 def make_court_nominative_case(court_name: str) -> str:
     """
-
     :param court_name:
     :return:
     """
@@ -90,6 +88,7 @@ def make_court_nominative_case(court_name: str) -> str:
         text += f" {i}"
     return text
 
+help(make_court_nominative_case)
 
 def make_a_header(court, plaintiff, respondent):
     text = f"-------------------------------\n" \
@@ -110,10 +109,10 @@ def make_a_header(court, plaintiff, respondent):
 
 def task_2():
     plaintiff = {
-        "name": "Сиротинский Кирилл Александрович",
-        "inn": "1236182357",
-        "ogrnip": "218431927812733",
-        "address": "123534, г. Москва, ул. Красивых молдавских партизан, 69"
+        "name": "Устюжанин Мирослав Сергеевич",
+        "inn": "123456789012",
+        "ogrnip": "123456789012345",
+        "address": "123242, г. Москва, ул. Большая Грузинская, 14"
     }
     cleaned_respondents = [i for i in respondents if i.get("case_number")]
     for respondent in cleaned_respondents:
