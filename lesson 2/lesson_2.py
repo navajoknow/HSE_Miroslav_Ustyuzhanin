@@ -22,7 +22,6 @@ def func_1_factorial(number: int) -> int | float:
         start += 1
     return result
 
-
 def func_2_max_number(*args) -> int | float:
     max_ = 0
     for i in args:
@@ -76,7 +75,6 @@ def task_1():
 она возвращает в консоль.
 """
 
-
 def make_court_nominative_case(court_name: str) -> str:
     """
     :param court_name:
@@ -88,14 +86,12 @@ def make_court_nominative_case(court_name: str) -> str:
         text += f" {i}"
     return text
 
-help(make_court_nominative_case)
-
 def make_a_header(court, plaintiff, respondent):
     text = f"-------------------------------\n" \
            f"В {make_court_nominative_case(court['court_name'])}\n" \
            f"Адрес: {court['court_address']}\n\n" \
            f"" \
-           f"Истец: {plaintiff['name']}" \
+           f"Истец: {plaintiff['name']}\n" \
            f"ИНН {plaintiff['inn']} ОГРНИП {plaintiff['ogrnip']}\n" \
            f"Адрес: {plaintiff['address']}\n\n" \
            f"" \
