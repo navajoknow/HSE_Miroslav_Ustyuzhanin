@@ -56,6 +56,7 @@ def task_2():
         json.dump(results, f)
     print("stop")
 
+
 def task_3(case_number):
     with open(f"{case_number}.ics", "r") as f:
         raw_data = f.read()
