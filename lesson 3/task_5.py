@@ -7,6 +7,7 @@ import zoneinfo
 
 zone = zoneinfo.ZoneInfo("Europe/Moscow")
 
+
 def task_1():
     with open("traders.txt", "r") as f:
         inns = [i.rstrip() for i in f.readlines()]
@@ -29,7 +30,7 @@ inn_person_pattern = re.compile(r'\b\d{12}\b')
 
 
 def task_2():
-    with open("1000_efrsb_messages.json", "r") as f:
+    with open("10000_efrsb_messages.json", "r") as f:
         msgs = json.load(f)
     results = {}
     for i in msgs:
@@ -56,6 +57,7 @@ def task_2():
         json.dump(results, f)
     print("stop")
 
+
 def task_3(case_number):
     with open(f"{case_number}.ics", "r") as f:
         raw_data = f.read()
@@ -74,9 +76,10 @@ def task_3(case_number):
 
 def main():
     case_number = "А40-183194-2015"
-    task_1()
-    task_2()
+    # task_1()
+    # task_2()
     result = task_3(case_number)
+
 
 if __name__ == "__main__":
     main()
