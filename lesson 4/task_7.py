@@ -22,7 +22,6 @@ import time
 ● make_a_decision — вынести решение по делу, добавить verdict и сменить атрибут is_finished на True
 """
 
-
 class CourtCase:
     def __init__(self, case_number: str):
         self.case_number = case_number
