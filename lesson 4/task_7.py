@@ -63,10 +63,26 @@ class CourtCase:
         """
         вынести решение по делу, добавить verdict и сменить атрибут is_finished на True
         """
-        print(f'Суд вынес следующее решение: {verdict}')
+        self.verdict = verdict
         self.is_finished = True
 
 
+# ТЕСТИРУЕМ
+
 testcase = CourtCase(case_number='123')
-testcase.set_a_listening_datetime(start='13.04.2024 17:00', place='Зал судебных заседаний № 555')
-print(testcase.listening_datetimes[0])
+testcase.set_a_listening_datetime(start='12.04.2024 17:00', place='Зал судебных заседаний № 555')
+testcase.add_participant('7707083893')
+testcase.add_participant('7706107510')
+testcase.add_participant('5504036333')
+testcase.add_participant('5911029807')
+testcase.remove_participant('5911029807')
+testcase.make_a_decision(verdict='Иск удовлетворить полностью')
+
+print(f'Номер дела: {testcase.case_number}')
+for i in testcase.case_participants:
+    print(f'Участник, ИНН: {i}')
+for i in testcase.listening_datetimes:
+    print(f'Дата и время судебного заседания: {i}')
+print(f'Суд вынес решение: {testcase.verdict}')
+print(f'Дело завершено: {testcase.is_finished}')
+
