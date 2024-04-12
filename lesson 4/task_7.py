@@ -1,4 +1,5 @@
 import time
+from datetime import datetime
 
 """
 Домашнее задание №7
@@ -69,7 +70,7 @@ class CourtCase:
 # ТЕСТИРУЕМ
 
 testcase = CourtCase(case_number='123')
-testcase.set_a_listening_datetime(start='12.04.2024 17:00', place='Зал судебных заседаний № 555')
+testcase.set_a_listening_datetime(start='12.04.2024 17:00', place='Зал № 555')
 testcase.add_participant('7707083893')
 testcase.add_participant('7706107510')
 testcase.add_participant('5504036333')
@@ -78,10 +79,12 @@ testcase.remove_participant('5911029807')
 testcase.make_a_decision(verdict='Иск удовлетворить полностью')
 
 print(f'Номер дела: {testcase.case_number}')
+print('Участники:')
 for i in testcase.case_participants:
-    print(f'Участник, ИНН: {i}')
+    print(f'  ИНН {i}')
 for i in testcase.listening_datetimes:
-    print(f'Дата и время судебного заседания: {i}')
+    print(f'Дата и время судебного заседания: {i['start']}')
+    print(f'Место судебного заседания: {i['place']}')
 print(f'Суд вынес решение: {testcase.verdict}')
 print(f'Дело завершено: {testcase.is_finished}')
 
