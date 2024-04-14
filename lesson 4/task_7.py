@@ -32,7 +32,7 @@ class CourtCase:
 
     def set_a_listening_datetime(self, start_time: str, place: str):
         """
-        set_a_listening_datetime — добавляет в список listening_datetimes судебное заседание
+        добавляет в список listening_datetimes судебное заседание
         """
         listening = {
             "start_time": datetime.strptime(start_time, '%d.%m.%Y %H:%M'),
