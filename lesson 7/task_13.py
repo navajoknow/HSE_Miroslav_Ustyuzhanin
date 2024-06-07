@@ -66,8 +66,8 @@ class ParserCBRF:
         сохраняем данные словаря в файл формата json
         """
         filename = f"currency_data_{self.to_date}.json"
-        with open(filename, 'w') as json_file:
-            json.dump(self.data, json_file)
+        with open(filename, 'w', encoding='utf-8') as json_file:
+            json.dump(self.data, json_file, ensure_ascii=False, indent=4)
         print(f"Данные сохранены в файл {filename}")
 
 def main():
