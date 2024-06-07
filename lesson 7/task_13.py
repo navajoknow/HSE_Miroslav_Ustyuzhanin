@@ -7,7 +7,8 @@ class ParserCBRF:
 
     def __init__(self, to_date: str):
         self.to_date = to_date
-        # создаем пустой словарь, в который в дальнейшем положим данные после обработки парсером
+        # создаем пустой словарь, в который в дальнейшем положим данные и который будем использовать
+        # для формирования файла в json формате
         self.data = {}
 
     def start(self):
@@ -17,7 +18,7 @@ class ParserCBRF:
 
     def __get_currency_page_soup(self) -> BeautifulSoup:
         """
-        забираем данные с курсами валют к рублю на указанную в качестве аргумента дату со страницы сайта ЦБ РФ
+        забираем данные с курсами валют к рублю на указанную дату со страницы сайта ЦБ РФ
         и возвращаем soup-объект
         """
         # две строки ниже - конструирование URL
@@ -44,7 +45,8 @@ class ParserCBRF:
         units = [row.findAll('td')[2].text.strip() for row in table_rows]
         currencies = [row.findAll('td')[3].text.strip() for row in table_rows]
         currency_rates = [row.findAll('td')[4].text.strip() for row in table_rows]
-        # создаем словарь, в который в качестве значений передаем полученные списки
+        # создаем словарь, в качестве ключей которого указываем названия столбцов таблицы, а в качестве
+        # значений - полученные списки
         data = {
             "digit_codes": digit_codes,
             "letter_codes": letter_codes,
@@ -56,16 +58,18 @@ class ParserCBRF:
 
     def __save_parsed_data(self):
         """
-        сохраняем словарь в файл формата json
+        сохраняем данные словаря в файл формата json
         """
         filename = f"currency_data_{self.to_date}.json"
-        with open(filename, 'w', encoding='utf-8') as json_file:
-            json.dump(self.data, json_file, ensure_ascii=False, indent=4)
+        with open(filename, 'w') as json_file:
+            json.dump(self.data, json_file)
         print(f"Данные сохранены в файл {filename}")
 
 def main():
+    """
+    создаем объект класса и передаем в качестве параметра строку с датой, далее запускаем метод start
+    """
     parser = ParserCBRF('07.06.2024')
-    # запускаем парсер и сохраняем данные в JSON
     parser.start()
 
 
