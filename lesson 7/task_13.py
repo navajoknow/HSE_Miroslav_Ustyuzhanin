@@ -63,7 +63,8 @@ class ParserCBRF:
 
     def __save_parsed_data(self):
         """
-        сохраняем данные словаря в файл формата json
+        сохраняем данные словаря в файл формата json, при этом устнавливаем кодировку
+        и параметр ensure_ascii=False, чтобы в файле json отображались символы кириллицы
         """
         filename = f"currency_data_{self.to_date}.json"
         with open(filename, 'w', encoding='utf-8') as json_file:
