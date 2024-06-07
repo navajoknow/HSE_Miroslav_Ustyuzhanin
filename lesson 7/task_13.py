@@ -2,6 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
+"""
+Назначением данного класса является парсинг данных с курсами валют к рублю на заданную дату,
+страница: https://www.cbr.ru/currency_base/daily/
+"""
+
 class ParserCBRF:
     BASE_URL = 'https://www.cbr.ru'
 
@@ -18,8 +23,7 @@ class ParserCBRF:
 
     def __get_currency_page_soup(self) -> BeautifulSoup:
         """
-        забираем данные с курсами валют к рублю на указанную дату со страницы сайта ЦБ РФ
-        и возвращаем soup-объект
+        забираем данные с курсами валют к рублю на заданную дату и возвращаем soup-объект
         """
         # две строки ниже - конструирование URL
         url = f"{self.BASE_URL}/currency_base/daily/?UniDbQuery.Posted=True&UniDbQuery.To={self.to_date}"
