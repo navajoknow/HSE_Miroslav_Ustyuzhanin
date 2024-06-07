@@ -54,7 +54,7 @@
     "Python.lesson_2.executor": "Run",
     "Python.lesson_2_alt.executor": "Run",
     "Python.lesson_3.executor": "Run",
-    "Python.main.executor": "Run",
+    "Python.main.executor": "Debug",
     "Python.task 11.executor": "Run",
     "Python.task_1.executor": "Run",
     "Python.task_11.executor": "Debug",
@@ -409,7 +409,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717792383416</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="upd">
+      <option name="closed" value="true" />
+      <created>1717793774406</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1717793774406</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

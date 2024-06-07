@@ -37,9 +37,10 @@ class ParserCBRF:
         достаем данные таблицы с курсами валют из soup-объекта, заполняем словарь
         и возвращаем его
         """
-        # находим строки таблицы, пропуская заголовок
+        # находим строки таблицы (tr), пропуская заголовок, и создаем из них общий список
         table_rows = soup.find('table').findAll('tr')[1:]
-        # используем list comprehension для создания списков на каждую колонку таблицы
+        # используем list comprehension для создания отдельных списков из колонок таблицы
+        # делаем это, выдергивая ячейки (td), занимающие определенные позиции в каждой строке (tr)
         digit_codes = [row.findAll('td')[0].text.strip() for row in table_rows]
         letter_codes = [row.findAll('td')[1].text.strip() for row in table_rows]
         units = [row.findAll('td')[2].text.strip() for row in table_rows]
@@ -67,7 +68,8 @@ class ParserCBRF:
 
 def main():
     """
-    создаем объект класса и передаем в качестве параметра строку с датой, далее запускаем метод start
+    создаем объект класса и передаем в качестве параметра строку с датой,
+    далее запускаем метод start
     """
     parser = ParserCBRF('07.06.2024')
     parser.start()
