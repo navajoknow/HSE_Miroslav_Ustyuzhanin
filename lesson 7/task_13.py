@@ -46,7 +46,7 @@ class ParserCBRF:
         units = [row.findAll('td')[2].text.strip() for row in table_rows]
         currencies = [row.findAll('td')[3].text.strip() for row in table_rows]
         currency_rates = [row.findAll('td')[4].text.strip() for row in table_rows]
-        # создаем словарь, в качестве ключей которого указываем названия столбцов таблицы, а в качестве
+        # далее создаем словарь, в качестве ключей которого указываем названия столбцов таблицы, а в качестве
         # значений - полученные списки
         data = {
             "digit_codes": digit_codes,
