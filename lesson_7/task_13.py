@@ -71,6 +71,7 @@ class ParserCBRF:
             json.dump(self.data, json_file, ensure_ascii=False, indent=4)
         print(f"Данные сохранены в файл {filename}")
 
+
 def main():
     """
     создаем объект класса и передаем в качестве параметра строку с датой,
@@ -80,5 +81,6 @@ def main():
     parser.start()
 
 
-main()
+if __name__ == '__main__':
+    main()
 
