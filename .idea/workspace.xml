@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccab13a0-3889-4179-a2c1-dd16effa32a1" name="Changes" comment="upd">
-      <change afterPath="$PROJECT_DIR$/lesson_3/task_5 (new).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_8 (task_15_not_finished)/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_8 (task_15_not_finished)/task_14.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 1/sirotinsky_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_1/sirotinsky_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 1/task_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_1/task_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 1/task_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_1/task_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 2/lesson_2_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_2/lesson_2_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 2/syrotinsky_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_2/syrotinsky_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 2/task_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_2/task_3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 3/1000_efrsb_messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3/1000_efrsb_messages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 3/court_dates.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3/court_dates.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 3/emails.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3/emails.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 3/task_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3/task_5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 3/traders.csv" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3/traders.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 3/traders.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3/traders.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 3/traders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3/traders.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 3/А40-183194-2015.ics" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3/А40-183194-2015.ics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 4/task_7.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_4/task_7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 6/task_11.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_6/task_11.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 7/task_13.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_7/task_13.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_8 (task_15_not_fin)/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_8 (task_15_not_fin)/task_14.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_8/task_14.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -488,7 +469,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717803362053</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="upd">
+      <option name="closed" value="true" />
+      <created>1718049438525</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1718049438525</updated>
+    </task>
+    <task id="LOCAL-00039" summary="upd">
+      <option name="closed" value="true" />
+      <created>1718049600337</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1718049600337</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
