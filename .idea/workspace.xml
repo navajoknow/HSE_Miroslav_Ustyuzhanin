@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccab13a0-3889-4179-a2c1-dd16effa32a1" name="Changes" comment="upd">
-      <change beforePath="$PROJECT_DIR$/lesson_8/task_14.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_8/task_14.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_final/task_final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,16 +66,18 @@
     "Python.task_3.executor": "Run",
     "Python.task_5.executor": "Run",
     "Python.task_7.executor": "Debug",
+    "Python.task_final.executor": "Run",
     "Python.test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/musty/PycharmProjects/HSE_Miroslav_Ustyuzhanin",
+    "last_opened_file_path": "C:/Users/musty/PycharmProjects/HSE_Miroslav_Ustyuzhanin/lesson_final",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\musty\PycharmProjects\HSE_Miroslav_Ustyuzhanin\lesson_final" />
       <recent name="C:\Users\musty\PycharmProjects\HSE_Miroslav_Ustyuzhanin" />
       <recent name="C:\Users\musty\PycharmProjects\HSE_Miroslav_Ustyuzhanin\lesson 3" />
     </key>
@@ -492,7 +495,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718049862629</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="upd">
+      <option name="closed" value="true" />
+      <created>1718050338759</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1718050338759</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
