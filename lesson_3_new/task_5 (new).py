@@ -20,7 +20,7 @@ def get_data_from_json(path_to_traders_json: str, inn_from_txt: list) -> list:
     1.2. получаем список с данными об организациях, найденных по ИНН, из файла traders.json
     """
     with open(path_to_traders_json, 'r') as f:
-        traders_json = json.load(f
+        traders_json = json.load(f)
     data_from_json = []
     for i in traders_json:
         if i['inn'] in inn_from_txt:
