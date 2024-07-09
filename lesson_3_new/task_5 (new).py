@@ -5,7 +5,7 @@ import re
 
 def get_inn_from_txt(path_to_traders_txt: str) -> list:
     """
-    1.1. получаем список ИНН организаций из файла traders.txt
+    1.1. получаем список с ИНН оранизаций из файла traders.txt
     """
     inn_from_txt = []
     with open(path_to_traders_txt, 'r') as f:
@@ -17,10 +17,10 @@ def get_inn_from_txt(path_to_traders_txt: str) -> list:
 
 def get_data_from_json(path_to_traders_json: str, inn_from_txt: list) -> list:
     """
-    1.2. получаем список с информациоей о таких организациях (ИНН, ОГРН, адрес) из файла traders.json
+    1.2. получаем список с данными об организациях, найденных по ИНН, из файла traders.json
     """
     with open(path_to_traders_json, 'r') as f:
-        traders_json = json.load(f)
+        traders_json = json.load(f
     data_from_json = []
     for i in traders_json:
         if i['inn'] in inn_from_txt:
@@ -31,7 +31,7 @@ def get_data_from_json(path_to_traders_json: str, inn_from_txt: list) -> list:
 
 def save_json_data_to_csv(data_from_json):
     """
-    1.3. сохраняем такую информацию об организациях в файле traders.csv
+    1.3. сохраняем список с данными об организациях в файл traders.csv
     """
     filename = 'traders.csv'
     fieldnames = ['inn', 'ogrn', 'address']
